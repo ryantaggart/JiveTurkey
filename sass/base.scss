@@ -1,0 +1,62 @@
+/********************* BASE STYLESHEET *********************/
+/**
+* This Stylesheet contains all the Base styles such as the grid, page wraps, main containers, etc
+**/
+
+// Set box-sizing to Border-box
+
+* {
+	@include box-sizing(border-box);
+}
+
+// Floats & Clears
+
+.fl {float: left;}
+.fr {float: right;}
+
+
+// Main Container Items
+
+.pageWrap {
+	width: 100%;
+	padding: 0 5%;
+	overflow: hidden;
+}
+
+.mainContainer {
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+	background: #eeeeee;
+}
+
+
+
+// Content Container Items
+
+.mainContent {}
+
+.pageSidebar {}
+
+@media all and (min-width: 700px) { // Reflow Main Content and Page Sidebar for Larger Screens
+	.mainContent,
+	.pageSidebar { float: left; }
+
+	.mainContent {
+		width: 70%;
+		padding-right: 5%;
+	}
+
+	.pageSidebar { width: 30%; }
+}
+
+// Embedded Elements
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+// Lists
+
+ul, ol {margin: 0; padding: 0;}

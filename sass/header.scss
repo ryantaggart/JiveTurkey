@@ -1,0 +1,15 @@
+/********************* HEADER *********************/
+
+.logo {
+	float: left;
+}
+
+.siteNavigation {
+	float: right;
+
+	li {
+		float: left;
+		list-style: none;
+		padding: 0.5em 1em;
+	}
+}

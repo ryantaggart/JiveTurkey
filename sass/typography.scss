@@ -1,0 +1,51 @@
+/********************* TYPOGRAPHY *********************/
+/**
+* Typography Related Stylesheet
+**/
+
+
+// Site Base Font Styles
+
+html {
+  font-family: Helvetica;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+  font-family: Museo;
+}
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25em;
+  margin: 1em 0 0 0;
+}
+
+h1 { font-size: 2em;}
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+p {
+  margin: 0.5em 0;
+  line-height: 1.5em;
+}
+
+// Blockquote
+blockquote {
+  margin-left: 1em;
+  padding-left: 1em;
+  font-size: 0.95em;
+  line-height: 1.2em;
+  font-style: italic;
+  border-left: 1px solid #444;
+}
+
+// Single Post Entry
+.singleArticle {
+  .postContent>p:first-of-type {font-size: 1.3em;}
+}

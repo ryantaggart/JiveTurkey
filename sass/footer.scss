@@ -1,0 +1,20 @@
+/********************* FOOTER *********************/
+
+.pageFooter {
+	background: #444;
+
+	li {list-style: none;}
+}
+
+@media all and (min-width: 700px) {
+	.footerSection {
+		float: left;
+		width: 30%;
+		padding: 1em 0;
+	}
+
+	.footerSection.middleSection {
+		width: 36%;
+		padding: 1em 3%;
+	}
+}

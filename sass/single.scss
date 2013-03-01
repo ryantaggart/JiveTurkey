@@ -1,0 +1,52 @@
+/********************* SINGLE ARTICLE PAGE STYLES *********************/
+
+.singleArticle {
+
+	.postDate,
+	.postCommentCount {
+		float: left;
+		margin-right: 2em;
+	}
+
+	.post-categories {
+		clear: both;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			float: left;
+			padding: 0.5em 1em 0.5em 0;
+		}
+	}
+
+	.postContent {clear: both;}
+
+	img {width: 100%;}
+
+	@media all and (min-width: 700px) {
+		img { width: auto; }
+		img[align="left"] {margin-right: 1.25em;}
+		img[align="right"] {margin-left: 1.25em;}
+	}
+}
+
+.authorInfo {
+	padding: 0.5em 0;
+	text-align: center;
+}
+
+// Comment Related Items
+
+.commentContainer {
+	background: #eee;
+}
+
+.comments ol {
+	list-style: none;
+	padding: 0;
+
+	li { padding: 1em 2em; 	}
+	li:nth-child(odd) {background: #ffffff;}
+	li:nth-child(even) {background: #dddddd;}
+}
+
