@@ -2,12 +2,6 @@
 
 .singleArticle {
 
-	.postDate,
-	.postCommentCount {
-		float: left;
-		margin-right: 2em;
-	}
-
 	.post-categories {
 		clear: both;
 		margin: 0;
@@ -30,23 +24,10 @@
 	}
 }
 
+
+// Author Tagline
 .authorInfo {
 	padding: 0.5em 0;
 	text-align: center;
+	background: lighten($mainContainerColor, 10%);
 }
-
-// Comment Related Items
-
-.commentContainer {
-	background: #eee;
-}
-
-.comments ol {
-	list-style: none;
-	padding: 0;
-
-	li { padding: 1em 2em; 	}
-	li:nth-child(odd) {background: #ffffff;}
-	li:nth-child(even) {background: #dddddd;}
-}
-

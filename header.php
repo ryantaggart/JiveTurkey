@@ -29,12 +29,14 @@
 	
 	<body <?php body_class(); ?>>
 	
-	<header class="pageHeader pageWrap">
+	<header class="siteHeader">
 		<h1 class="logo">
 			<a href="/">Jive Turkey</a>
 		</h1>
 
 		<nav class="siteNavigation">
-			<?php wp_nav_menu('primary'); ?> <!-- Menu Set up in functions.php -->
+			<h3 class="navToggle icon-list" id="navToggle">Navigation</h3>
+			<?php wp_nav_menu('primary'); ?>
 		</nav>
+
 	</header>

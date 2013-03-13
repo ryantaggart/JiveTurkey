@@ -27,16 +27,12 @@
 	padding-top: 1em;
 	padding-bottom: 1em;
 
-	background: #eeeeee;
+	background: $mainContainerColor;
 }
 
 
 
 // Content Container Items
-
-.mainContent {}
-
-.pageSidebar {}
 
 @media all and (min-width: 700px) { // Reflow Main Content and Page Sidebar for Larger Screens
 	.mainContent,
@@ -60,3 +56,8 @@ img {
 // Lists
 
 ul, ol {margin: 0; padding: 0;}
+
+ol {
+	list-style: decimal;
+	padding: 0 0 0 1em;
+}

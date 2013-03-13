@@ -1,15 +1,65 @@
 /********************* HEADER *********************/
 
+//*** Logo ***//
 .logo {
-	float: left;
+	text-align: center;
+	margin: 0.5em 0;
 }
 
+
+//*** Navigation Items ***//
 .siteNavigation {
-	float: right;
+	width: 100%;
+	padding: 0;
+}
+
+// Style for the "Navigation" Element that shows/hides list on mobile
+.navToggle {
+	display: block;
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 0;
+	background: darken($navigationColor, 10%);
+	color: #fff;
+}
+
+.menu {
+	display: none;
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
 
 	li {
-		float: left;
-		list-style: none;
-		padding: 0.5em 1em;
+		display: block;
+		text-align: center;
+		padding: 0.25em 0;
+		background: $navigationColor;
+	}
+}
+
+/** Change to standard Menu
+** (Float Left with Right Floated Logo)
+**/
+@media all and (min-width: 650px) {
+	.navToggle {display: none;}
+	.logo {float: left;}
+	.siteHeader {
+		padding: 0 5%;
+		overflow: hidden;
+	}
+	.menu {
+		display: block;
+		float: right;
+
+		a { color: $navigationColor; }
+
+		li {
+			float: left;
+			list-style: none;
+			padding: 2em 1em;
+			background: inherit;
+		}
 	}
 }

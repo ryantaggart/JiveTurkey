@@ -4,22 +4,33 @@
 // Enqueueing Styles for the Theme
 	function theme_styles() { 
 	  wp_register_style( 'baseStyle', get_template_directory_uri() . '/style/style.css', array(), '1.00', 'all' );
-	  wp_register_style( 'singleStyle', get_template_directory_uri() . '/style/single.css', array(), '1.00', 'all' );
-	  wp_register_style( 'indexStyle', get_template_directory_uri() . '/style/index.css', array(), '1.00', 'all' );
-
+	  
 	  wp_enqueue_style( 'baseStyle' );
-	  if(is_single()) {	wp_enqueue_style( 'singleStyle' ); }
-	  if(is_front_page()) {	wp_enqueue_style( 'indexStyle' ); }
-
 	}
 
 	add_action('wp_enqueue_scripts', 'theme_styles');
+
+// Enqueueing Scripts for the Theme
+  function register_js() {
+    if (!is_admin()) {
+      wp_deregister_script('jquery');
+      wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js');
+      wp_register_script('site', get_template_directory_uri() . '/js/site-ck.js', 'jquery');
+
+      wp_enqueue_script('jquery');
+      wp_enqueue_script('site');
+  }
+}
+
+  add_action('init', 'register_js');
+
+
 
 // Set up Menu functionality
 	if ( function_exists( 'register_nav_menus' ) ) {
 		register_nav_menus(
 			array(
-			  'primary' => 'Primary Header Nav',
+			  'primary' => 'Primary Header Nav',  // This will be the main Nav Bar
 			)
 		);
 	}

@@ -1,0 +1,30 @@
+/********************* PAGE SPECIFIC STYLES *********************/
+
+// These are styles generic to all pages
+
+.postDate,
+.postCommentCount {
+	float: left;
+	margin-right: 2em;
+}
+
+.postMeta {
+	font-size: 0.8em;
+	overflow: hidden;
+}
+
+.postContent {
+	overflow: hidden;
+}
+
+
+.readMoreLink {
+	display: block;
+	float: right;
+	@extend .button;
+
+	&:after {
+		@extend .icon-arrow-right:before;
+		font-family: Entypo;
+	}
+}

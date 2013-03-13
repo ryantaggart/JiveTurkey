@@ -5,7 +5,7 @@
 **/
 
 /********************* Variables *********************/
-// Any color / Size Variables will be located Here
+@import "_variables";  // All Variables are Centralized
 
 
 /********************* Imports *********************/
@@ -17,7 +17,14 @@
 
 @import "base"; // All Base Styles (Main Container, Grids, Etc)
 @import "typography"; // All Type Related Items
+@import "icons"; // All Styles for Entypo Icons
 
 @import "header";
 @import "footer";
-@import "sidebar";
+
+@import "page";
+@import "single";
+
+@import "widgets/sidebar";
+@import "widgets/buttons";
+@import "widgets/comments";

@@ -9,9 +9,8 @@
 						<h1 class="postTitle"><?php the_title(); ?></h1>
 
 						<div class="postMeta">
-							<p class="postDate">Posted on: <?php the_date(); ?></p>
-							<p class="postCommentCount"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
-							<?php echo get_the_category_list(); ?>
+						 	<p class="postDate icon-calendar"><?php the_date(); ?></p>
+						 	<p class="postCommentCount icon-chat"><?php comments_number( 'No Comments', '1 Comment', '% Comments' ); ?></p>
 						</div>
 
 						<?php the_post_thumbnail(); ?>

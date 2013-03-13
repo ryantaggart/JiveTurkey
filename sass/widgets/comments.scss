@@ -1,0 +1,47 @@
+// Comment Related Items
+
+.commentContainer {
+	background: $commentsColor;
+
+	h2, h3, h4, h5, h6 {color: darken($commentsColor, 40%);	}
+}
+
+.comments {
+	ol {
+		list-style: none;
+		padding: 0;
+	}
+
+	li { padding: 1em 2em; 	}
+
+	li:nth-child(odd) { background: lighten($commentsColor, 20%); }
+	li:nth-child(even) { background: lighten($commentsColor, 10%); }
+
+	form {
+		width: 500px;
+		max-width: 100%;
+
+		label {display: block;}
+
+		input,
+		textarea {
+			line-height: 2em;
+			font-size: 0.8em;
+			padding: 0 0 0 0.5em;
+			width: 500px;
+			max-width: 100%;
+		}
+
+		.form-allowed-tags {
+			line-height: 1.5em;
+			font-size: 0.8em;
+		}
+
+		input[type="submit"] {@extend .button;}
+
+	}
+}
+
+.comment-reply-link {
+	@extend .button;
+}

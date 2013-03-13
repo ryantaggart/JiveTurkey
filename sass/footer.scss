@@ -1,9 +1,16 @@
 /********************* FOOTER *********************/
 
 .pageFooter {
-	background: #444;
+	background: $footerColor;
 
 	li {list-style: none;}
+
+	a { color: darken($footerColor, 30%); }
+	h2 {color: lighten($footerColor, 30%); }
+}
+
+.copyrightContainer {
+	font-size: 0.8em;
 }
 
 @media all and (min-width: 700px) {
@@ -14,7 +21,7 @@
 	}
 
 	.footerSection.middleSection {
-		width: 36%;
-		padding: 1em 3%;
+		width: 40%;
+		padding: 1em 5%;
 	}
 }

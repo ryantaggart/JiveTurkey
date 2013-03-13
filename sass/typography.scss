@@ -21,6 +21,8 @@ body {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25em;
   margin: 1em 0 0 0;
+  color: $headerColor;
+  a {color: $headerColor;}
 }
 
 h1 { font-size: 2em;}
@@ -32,7 +34,16 @@ h6 { font-size: 1.1em; }
 
 p {
   margin: 0.5em 0;
-  line-height: 1.5em;
+  line-height: 200%;
+  font-size: 0.9em;
+
+  @media all and (min-width: 600px) {font-size: 1em;}
+  @media all and (min-width: 950px) {font-size: 1.1em;}
+}
+
+a {
+  font-size: 1em;
+  color: $linkColor;
 }
 
 // Blockquote
@@ -49,3 +60,5 @@ blockquote {
 .singleArticle {
   .postContent>p:first-of-type {font-size: 1.3em;}
 }
+
+

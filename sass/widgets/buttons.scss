@@ -1,0 +1,13 @@
+/********************* BUTTON STYLES *********************/
+
+.button {
+	padding: 0.25em 2em;
+	margin: 0.5em 0 0 0;
+	text-decoration: none;
+	background: $buttonColor;
+	color: #fff;
+	font-size: 0.8em;
+	display: inline-block;
+	@include border-radius(10px);
+	border: none;
+}
